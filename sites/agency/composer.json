@@ -1,1 +1,260 @@
-tbd
+{
+    "name": "pantheon-upstreams/drupal-project",
+    "description": "Install Drupal 9 with Composer on Pantheon.",
+    "type": "project",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+             "package": {
+                "name": "woothemes/flexslider",
+                "version": "2.6.3",
+                "type": "drupal-library",
+                   "source": {
+                   "url": "https://github.com/woothemes/FlexSlider.git",
+                   "type": "git",
+                   "reference": "2.6.3"
+                   }
+                }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "upenn-chas/refresh_api_post",
+		"version": "1.0.1",
+                "type":"drupal-module",
+                "source": {
+                    "url": "https://github.com/upenn-chas/refresh_api_post.git",
+                    "type": "git",
+                    "reference": "1-0-1"
+                }
+            }
+        },
+	{
+	 "type": "package",
+	 "package": {
+	     "name": "ckeditor-plugin/colorbutton",
+	     "version": "4.11.1",
+	     "type": "drupal-library",
+	     "dist": {
+	         "url": "https://download.ckeditor.com/colorbutton/releases/colorbutton_4.11.1.zip",
+	         "type": "zip"
+	     }
+	 }
+	},
+	{
+	  "type": "package",
+	  "package": {
+	      "name": "ckeditor-plugin/panelbutton",
+	      "version": "4.11.1",
+	      "type": "drupal-library",
+	      "dist": {
+	          "url": "https://download.ckeditor.com/panelbutton/releases/panelbutton_4.11.1.zip",
+	          "type": "zip"
+	      }
+	  }
+	}
+    ],
+    "require": {
+        "ckeditor-plugin/colorbutton": "^4.11",
+        "ckeditor-plugin/panelbutton": "^4.11",
+        "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/ai": "^1.1",
+        "drupal/ai_agents": "^1.1",
+        "drupal/ai_provider_openai": "^1.1",
+        "drupal/asset_injector": "^2.21",
+        "drupal/attribution": "^1.0",
+        "drupal/auto_entitylabel": "^3.0@beta",
+        "drupal/barcodes": "^2.0",
+        "drupal/better_exposed_filters": "^6.0",
+        "drupal/block_class": "^2.0@beta",
+        "drupal/bootstrap_layout_builder": "^2.0",
+        "drupal/bpmn_io": "^2.0",
+        "drupal/burndown": "^1.0",
+        "drupal/calendar_link": "^3.0",
+        "drupal/ckeditor_bs_grid": "^2.0",
+        "drupal/ckeditor_details": "^2.1@alpha",
+        "drupal/ckeditor_font": "^2.0@beta",
+        "drupal/ckeditor_media_embed": "^2.0@alpha",
+        "drupal/clientside_validation": "^4.0",
+        "drupal/colorbutton": "^1.5",
+        "drupal/commerce": "^2.35",
+        "drupal/commerce_feeds": "^1.0@alpha",
+        "drupal/components": "^3.0",
+        "drupal/condition_path": "^3.0",
+        "drupal/conditional_fields": "^4.0@alpha",
+        "drupal/config_log": "^4.0",
+        "drupal/content_access": "^2.0",
+        "drupal/context": "^5.0@RC",
+        "drupal/core-composer-scaffold": "^10",
+        "drupal/core-project-message": "^10.3",
+        "drupal/core-recommended": "^10.3",
+        "drupal/correspondence_helper_block": "^1.0",
+        "drupal/custom_breadcrumbs": "^1.0",
+        "drupal/datetimehideseconds": "^1.3",
+        "drupal/devel": "^5.1",
+        "drupal/disable_field": "^3.0",
+        "drupal/ds": "^3.15",
+        "drupal/easy_email": "^3.0",
+        "drupal/eca": "^2.1",
+        "drupal/eca_tamper": "^2.0",
+        "drupal/editoria11y": "^2.0",
+        "drupal/exclude_node_title": "^1.3",
+        "drupal/extlink": "^1.6",
+        "drupal/feeds": "^3.0",
+        "drupal/feeds_tamper": "^2.0@beta",
+        "drupal/field_group": "^3.4",
+        "drupal/field_permissions": "^1.1",
+        "drupal/filefield_paths": "^1.0@beta",
+        "drupal/fitvids": "^2.0",
+        "drupal/flexslider": "^3.0@alpha",
+        "drupal/flickity": "^3.0@alpha",
+        "drupal/fullcalendar_view": "^5.1",
+        "drupal/gin": "^3.0@RC",
+        "drupal/google_analytics": "^4.0",
+        "drupal/hide_revision_field": "^2.5",
+        "drupal/hook_event_dispatcher": "^4.2",
+        "drupal/interval": "^1.9",
+        "drupal/jquery_ui_datepicker": "^2.0",
+        "drupal/key_auth": "^2.0",
+        "drupal/login_path_helper": "^1.0",
+        "drupal/mailsystem": "^4.5",
+        "drupal/masquerade": "^2.0@RC",
+        "drupal/meaofd": "^1.0",
+        "drupal/media_directories": "^2.1@beta",
+        "drupal/media_remote": "^1.10",
+        "drupal/metatag": "^2.1",
+        "drupal/mimemail": "^1.0@alpha",
+        "drupal/pathauto": "^1.8",
+        "drupal/permissions_filter": "^1.3",
+        "drupal/poll": "^1.6",
+        "drupal/protected_pages": "^1.6",
+        "drupal/radix": "^5.0",
+        "drupal/restui": "^1.20",
+        "drupal/rules": "4.0.x-dev@dev",
+        "drupal/same_page_preview": "^2.1",
+        "drupal/search_api_solr": "^4.2",
+        "drupal/sendgrid_integration": "^2.1",
+        "drupal/single_image_formatter": "^1.7",
+        "drupal/smart_date": "^4.2",
+        "drupal/smtp": "^1.3",
+        "drupal/social_auth_google": "^4.0",
+        "drupal/sticky": "^2.1",
+        "drupal/stickynav": "^1.4",
+        "drupal/superfish": "^1.6",
+        "drupal/symfony_mailer": "^1.4",
+        "drupal/taxonomy_import": "^2.0",
+        "drupal/tb_megamenu": "^3.0@alpha",
+        "drupal/term_condition": "^2.0",
+        "drupal/token_custom": "^1.0@alpha",
+        "drupal/token_filter": "^2.0",
+        "drupal/token_views_filter": "^2.0",
+        "drupal/twig_field_value": "^2.0",
+        "drupal/twig_tweak": "^3.2",
+        "drupal/ui_patterns": "^1.7",
+        "drupal/upgrade_status": "^4.0",
+        "drupal/views_accordion": "^2.0",
+        "drupal/views_bootstrap": "^5.5@alpha",
+        "drupal/views_bulk_operations": "^4.1",
+        "drupal/views_data_export": "^1.3",
+        "drupal/views_daterange_filters": "^1.0@alpha",
+        "drupal/views_evi": "^1.1",
+        "drupal/views_jump_menu": "^1.0@beta",
+        "drupal/views_slideshow": "^5.0",
+        "drupal/webform": "^6.1",
+        "drupal/webp": "^1.0@RC",
+        "laminas/laminas-feed": "^2.14",
+        "rsvp-system/rsvp-system-module": "dev-main",
+        "spatie/calendar-links": "^1.8",
+        "woothemes/flexslider": "~2.0"
+    },
+    "conflict": {
+            "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-install-cmd": [
+        ],
+        "post-update-cmd": [
+        ]
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+               "web/modules/contrib/media_directories/composer.libraries.json"
+            ]
+         },
+	"patches": {
+            "drupal/core": {
+            "Hack for nginx Apache htaccess issue": "https://www.drupal.org/files/issues/2023-01-25/protect-public-directoty-core_0.patch"
+            },
+            "drupal/acb": {
+            "Access denied for both anonymous & authenticated users when using ACB": "https://www.drupal.org/files/issues/2021-09-20/acb-3033866-5-access_denied.patch"
+            },
+            "drupal/pathauto": {
+            "Aliases not regenerated for existing nodes/ users": "https://www.drupal.org/files/issues/2019-12-11/pathauto_3100248_user-alias-update-2.patch"
+            },
+            "drupal/stickynav": {
+            "Check for hidden elements, for better mobile menus": "https://www.drupal.org/files/issues/2022-04-19/check-hidden-elements-3236259-3.patch"
+            },
+            "drupal/tamper": {
+            "timezone offset patch": "https://www.drupal.org/files/issues/2023-04-06/0001-Issue-3268276-Reworking-timezones.patch"
+            }
+	},
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "./web"
+            },
+            "allowed-packages": [
+                "pantheon-systems/drupal-integrations"
+            ],
+            "file-mapping": {
+                "[project-root]/.editorconfig": false,
+                "[project-root]/.gitattributes": false
+            }
+        },
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
+        },
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "platform": {
+            "php": "8.3"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-project-message": true,
+            "drupal/console-extend-plugin": true,
+            "simplesamlphp/composer-module-installer": true
+        }
+    },
+    "require-dev": {
+        "drush/drush": "^13",
+        "mglaman/drupal-check": "^1.4"
+    }
+}
