@@ -4,7 +4,7 @@ This repository contains a collection of [Composer](https://getcomposer.org/doc/
 The composer file used by Gluebox.com LLC for internal and external CMS activities.  
 
 **[government-filesystem](https://github.com/Gluebox-com-LLC/gluebox-agency/tree/main/sites/government-filesystem)**  
-A site featuring a file cabinet, events/announcements, calendar, and marketing information pages. Managing file attachments for meeting notes and public announcements, based on the department or community, is a key function of this build.  
+A site featuring a file cabinet, events, announcements, calendars, and marketing information pages. Managing file attachments for meeting notes and public announcements, based on the department or community, is a key function of this build.  
 
 **[rsvp-system](https://github.com/Gluebox-com-LLC/gluebox-agency/tree/main/sites/rsvp-system)**  
 A Drupal moonshot project that uses a recipe system to build a templated calendar and promotion platform. Ties together Drupal recipes, custom RSVP modules, and a custom RSVP site theme.  
